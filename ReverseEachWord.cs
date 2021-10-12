@@ -4,7 +4,8 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            string input = "how are you";
+            Console.WriteLine("Enter The String :");
+            string input = Console.ReadLine();
             string[] ar = input.Split(' ');
             string str = "";
             foreach (string words in ar)
