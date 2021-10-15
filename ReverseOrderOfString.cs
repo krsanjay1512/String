@@ -22,8 +22,9 @@ namespace ConsoleApp
                         Console.Write(s[j]);
                         count--;
                     }
+                       Console.Write(" ");
                 }
-                Console.Write("");
+              
             }
             for (int i = 0; i <= count; i++)
             {
