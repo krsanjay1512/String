@@ -6,7 +6,8 @@ namespace ConsoleApp
     {
         public static void Main(string[] args)
         {
-            string str = "how are you";
+            Console.WriteLine("Enter The String :");
+            string str = Console.ReadLine();
             int count = 0;
             for (int i=0;i<str.Length;i++)
             {
