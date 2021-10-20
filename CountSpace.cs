@@ -6,7 +6,8 @@ namespace ConsoleApp
     {
         public static void Main(string[] args)
         {
-            string str = "how are you hello  ";
+            Console.WriteLine("Enter the string for count space:");
+            string str = Console.ReadLine();
             int count = 0;
             for (int i=0;i<str.Length;i++)
             {
