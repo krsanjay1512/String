@@ -1,30 +1,32 @@
 using System;
-namespace LogicalProgram
+using System.Collections.Generic;
+
+namespace ConsoleApp
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.Write("Enter the string : ");
-            string message = Console.ReadLine();
-           
-            message = message.Replace(" ", string.Empty);
-            
-            while (message.Length > 0)
+            string s = "google";
+            Dictionary<char, int> dict = new Dictionary<char,int>();
+            foreach (var chars in s)
             {
-                Console.Write(message[0] + " : ");
-                int count = 0;
-                for (int j = 0; j < message.Length; j++)
-                {
-                    if (message[0] == message[j])
-                    {
-                        count++;
-                    }
+                if (!dict.ContainsKey(chars)) {
+                    dict.Add(chars,1);
                 }
-                Console.WriteLine(count);
-                message = message.Replace(message[0].ToString(), string.Empty);
+                else
+                {
+                    dict[chars]++;
+                }
             }
-            Console.ReadKey();
+            foreach (var data in dict) {
+                Console.WriteLine("{0}-{1}",data.Key,data.Value);
+            }
+
+
+            
+            Console.ReadLine();
         }
     }
+
 }
