@@ -7,9 +7,10 @@ namespace ConsoleApp
     {
         public static void Main(string[] args)
         {
-            string s = "google";
+            Console.WriteLine("Enter the string :");
+            string input =Console.ReadLine();
             Dictionary<char, int> dict = new Dictionary<char,int>();
-            foreach (var chars in s)
+            foreach (var chars in input)
             {
                 if (!dict.ContainsKey(chars)) {
                     dict.Add(chars,1);
