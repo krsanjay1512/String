@@ -1,6 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 
 namespace ConsoleApp1
@@ -9,7 +7,6 @@ namespace ConsoleApp1
     {
         public static void Main(string[] args)
         {
-
             Console.WriteLine("Enter the string :");
             string input = Console.ReadLine();
             string alpha = "asdfghjklzxcvbnmqwertyuiop";
@@ -24,8 +21,6 @@ namespace ConsoleApp1
             }
             Console.WriteLine(result);
             Console.ReadLine();
-
-
         }
     }
 
