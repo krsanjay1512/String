@@ -1,6 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace ConsoleApp1
 {
@@ -8,18 +6,14 @@ namespace ConsoleApp1
     {
         public static void Main(string[] args)
         {
-            Console.Write("Enter a String : ");
-            string inputString = Console.ReadLine();
+             Console.WriteLine("Enter the string :");
+            string word = Console.ReadLine();
 
-            Console.WriteLine("All substrings for given string are : ");
-
-            for (int i = 0; i < inputString.Length; ++i)
+            for (int i = 1; i < word.Length; i++)
             {
-                StringBuilder subString = new StringBuilder(inputString.Length - i);
-                for (int j = i; j < inputString.Length; ++j)
+                for (int j = 0; j <= word.Length - i; j++)
                 {
-                    subString.Append(inputString[j]);
-                    Console.Write(subString + " ");
+                    Console.WriteLine(word.Substring(j, i));
                 }
             }
             Console.ReadKey();
