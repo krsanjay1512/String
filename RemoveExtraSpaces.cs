@@ -1,7 +1,7 @@
 using System;
 namespace ConsoleApp1
 {
-    public class DeleteAllNumericValue
+    public class RemoveExtraSpaces
     {
         public static void Main(string[] args)
         {
