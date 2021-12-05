@@ -6,7 +6,8 @@ namespace ConsoleApp1
     {
         public static void Main(string[] args)
         {
-            String s = "San3241jay";
+            Console.WriteLine("Enter string with Numer:");
+            String s =Console.ReadLine(); //San3241jay
             String t = "";
             for (int i=0;i<s.Length;i++)
             {
