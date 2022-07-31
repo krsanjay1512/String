@@ -15,7 +15,7 @@ namespace ConsoleApp1
             {
                 if (!input.ToLower().Contains(alpha[i]))
                 {
-                    result="Not Pangram";
+                    result="Not Panagram";
                     break;
                 }
             }
