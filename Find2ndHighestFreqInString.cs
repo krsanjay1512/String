@@ -7,7 +7,9 @@ namespace Find2ndHighestFreqInString
                
         static void Main(string[] args)
         {
-            string input = "hgffsdghfdshgg";
+             Console.WriteLine("Enter The String :");
+            string input = Console.ReadLine();
+            //string input = "hgffsdghfdshgg";
             int first = 0, second = 0;
             int[] arr = new int[256];
 
